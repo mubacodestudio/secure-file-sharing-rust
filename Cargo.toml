@@ -1,0 +1,29 @@
+[package]
+name = "secure-file-sharing-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = "0.8.4"
+argon2 = "0.5.3"
+async-trait = "0.1.83"
+axum = { version = "0.7.7", features = ["multipart"] }
+axum-extra = { version = "0.9.4", features = ["cookie"] }
+base64 = "0.22.1"
+block-modes = "0.9.1"
+chrono = { version = "0.4.38", features = ["serde"] }
+dotenv = "0.15.0"
+jsonwebtoken = "9.3.0"
+rand = "0.8.5"
+rsa = "0.9.6"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+sqlx = { version = "0.8.2", features = ["runtime-async-std-native-tls", "postgres", "chrono", "uuid"] }
+time = "0.3.36"
+tokio = { version = "1.40.0", features = ["full"] }
+tokio-cron-scheduler = "0.13.0"
+tower = "0.5.1"
+tower-http = { version = "0.6.1", features = ["cors", "trace"] }
+tracing-subscriber = "0.3.18"
+uuid = { version = "1.10.0", features = ["serde", "v4"] }
+validator = { version = "0.18.1", features = ["derive"] }
